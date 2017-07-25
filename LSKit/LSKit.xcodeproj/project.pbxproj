@@ -11,6 +11,7 @@
 		513289F41F27198700B1A527 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 513289F31F27198700B1A527 /* Assets.xcassets */; };
 		51328A001F271C8800B1A527 /* LSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 513289FF1F271C8800B1A527 /* LSAppDelegate.m */; };
 		51328A061F271DC500B1A527 /* LSRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51328A051F271DC500B1A527 /* LSRootViewController.m */; };
+		51328A0A1F27223800B1A527 /* LSToolsTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51328A091F27223800B1A527 /* LSToolsTimerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		513289FF1F271C8800B1A527 /* LSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSAppDelegate.m; sourceTree = "<group>"; };
 		51328A041F271DC500B1A527 /* LSRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSRootViewController.h; sourceTree = "<group>"; };
 		51328A051F271DC500B1A527 /* LSRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSRootViewController.m; sourceTree = "<group>"; };
+		51328A081F27223800B1A527 /* LSToolsTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSToolsTimerViewController.h; sourceTree = "<group>"; };
+		51328A091F27223800B1A527 /* LSToolsTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSToolsTimerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,13 +57,14 @@
 		513289E61F27198700B1A527 /* LSKit */ = {
 			isa = PBXGroup;
 			children = (
-				513289F31F27198700B1A527 /* Assets.xcassets */,
-				513289F81F27198700B1A527 /* Info.plist */,
-				513289E71F27198700B1A527 /* Supporting Files */,
+				51328A071F2721D900B1A527 /* Tools */,
 				513289FE1F271C8800B1A527 /* LSAppDelegate.h */,
 				513289FF1F271C8800B1A527 /* LSAppDelegate.m */,
 				51328A041F271DC500B1A527 /* LSRootViewController.h */,
 				51328A051F271DC500B1A527 /* LSRootViewController.m */,
+				513289F31F27198700B1A527 /* Assets.xcassets */,
+				513289F81F27198700B1A527 /* Info.plist */,
+				513289E71F27198700B1A527 /* Supporting Files */,
 			);
 			path = LSKit;
 			sourceTree = "<group>";
@@ -71,6 +75,15 @@
 				513289E81F27198700B1A527 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		51328A071F2721D900B1A527 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				51328A081F27223800B1A527 /* LSToolsTimerViewController.h */,
+				51328A091F27223800B1A527 /* LSToolsTimerViewController.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +159,7 @@
 				51328A061F271DC500B1A527 /* LSRootViewController.m in Sources */,
 				51328A001F271C8800B1A527 /* LSAppDelegate.m in Sources */,
 				513289E91F27198700B1A527 /* main.m in Sources */,
+				51328A0A1F27223800B1A527 /* LSToolsTimerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
