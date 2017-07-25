@@ -17,6 +17,7 @@
 
 @implementation LSTools
 
+
 + (instancetype)sharedTools {
     static LSTools *instance = nil;
     static dispatch_once_t onceToken;
@@ -26,7 +27,7 @@
     return instance;
 }
 
-#pragma mark - 创建一个GCD定时器
+#pragma mark - Create a GCD timer
 
 - (void)initGCDTimerWithIntervals:(CGFloat)intervalsTime andCallback:(LSGCDTimerCallBack)callBack{
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
