@@ -20,22 +20,6 @@
 @implementation LSRootViewController
 
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    self.title = @"LSKit";
-    self.titles = @[].mutableCopy;
-    self.classNames = @[].mutableCopy;
-    [self addCell:@"Timer" class:@"LSToolsTimerViewController"];
-    
-    [self.tableView reloadData];
-}
-
-- (void)addCell:(NSString *)title class:(NSString *)className {
-    [self.titles addObject:title];
-    [self.classNames addObject:className];
-}
-
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -61,5 +45,26 @@
     }
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+
+#pragma mark - Custom method
+
+- (void)addCell:(NSString *)title class:(NSString *)className {
+    [self.titles addObject:title];
+    [self.classNames addObject:className];
+}
+
+#pragma mark - self Life cycle
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.title = @"LSKit";
+    self.titles = @[].mutableCopy;
+    self.classNames = @[].mutableCopy;
+    [self addCell:@"Timer" class:@"LSToolsTimerViewController"];
+    
+    [self.tableView reloadData];
+}
+
 
 @end
