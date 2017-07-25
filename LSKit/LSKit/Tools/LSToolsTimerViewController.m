@@ -7,6 +7,7 @@
 //
 
 #import "LSToolsTimerViewController.h"
+#import "LSTools.h"
 
 @interface LSToolsTimerViewController ()
 
@@ -16,9 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor redColor];
+    __block NSInteger index = 0;
+    [[LSTools sharedTools] initGCDTimerWithIntervals:3.f andCallback:^{
+        NSLog(@"%ld", index++);
+    }];
+    [[LSTools sharedTools] startGCDTimer];
 }
 
 - (void)didReceiveMemoryWarning {

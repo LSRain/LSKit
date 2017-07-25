@@ -12,6 +12,7 @@
 		51328A001F271C8800B1A527 /* LSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 513289FF1F271C8800B1A527 /* LSAppDelegate.m */; };
 		51328A061F271DC500B1A527 /* LSRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51328A051F271DC500B1A527 /* LSRootViewController.m */; };
 		51328A0A1F27223800B1A527 /* LSToolsTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51328A091F27223800B1A527 /* LSToolsTimerViewController.m */; };
+		51328A101F272BF600B1A527 /* LSTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 51328A0F1F272BF600B1A527 /* LSTools.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,8 @@
 		51328A051F271DC500B1A527 /* LSRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSRootViewController.m; sourceTree = "<group>"; };
 		51328A081F27223800B1A527 /* LSToolsTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSToolsTimerViewController.h; sourceTree = "<group>"; };
 		51328A091F27223800B1A527 /* LSToolsTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSToolsTimerViewController.m; sourceTree = "<group>"; };
+		51328A0E1F272BF600B1A527 /* LSTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTools.h; sourceTree = "<group>"; };
+		51328A0F1F272BF600B1A527 /* LSTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTools.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 			children = (
 				51328A081F27223800B1A527 /* LSToolsTimerViewController.h */,
 				51328A091F27223800B1A527 /* LSToolsTimerViewController.m */,
+				51328A0E1F272BF600B1A527 /* LSTools.h */,
+				51328A0F1F272BF600B1A527 /* LSTools.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51328A101F272BF600B1A527 /* LSTools.m in Sources */,
 				51328A061F271DC500B1A527 /* LSRootViewController.m in Sources */,
 				51328A001F271C8800B1A527 /* LSAppDelegate.m in Sources */,
 				513289E91F27198700B1A527 /* main.m in Sources */,
@@ -301,6 +307,7 @@
 				513289FD1F27198700B1A527 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
