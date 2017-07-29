@@ -15,11 +15,18 @@
 
 @implementation LSToolsCacheViewController
 
+
+- (void)btnClickAction:(UIButton *)sender{
+    [[LSTools sharedTools].userCache removeAllObjects];
+    
+    NSLog(@"red Cache Data(New): %@", [[LSTools sharedTools].userCache objectForKey:@"kTestKey"]);
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.view.backgroundColor = [UIColor darkGrayColor];
+    self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
     
     // Cache
     [[LSTools sharedTools].userCache setObject:@[
@@ -29,6 +36,12 @@
                                                  ]
                                         forKey:@"kTestKey"];
     NSLog(@"red Cache Data: %@", [[LSTools sharedTools].userCache objectForKey:@"kTestKey"]);
+    
+    UIButton *clearBtn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 124, 44)];
+    [clearBtn setTitle:@"clear Cache" forState:UIControlStateNormal];
+    clearBtn.backgroundColor = [UIColor redColor];
+    [self.view addSubview:clearBtn];
+    [clearBtn addTarget:self action:@selector(btnClickAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)didReceiveMemoryWarning {
