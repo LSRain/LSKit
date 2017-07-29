@@ -19,6 +19,7 @@
 		51D372D41F2C5378004C3B34 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D372CC1F2C5378004C3B34 /* YYDiskCache.m */; };
 		51D372D51F2C5378004C3B34 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D372CE1F2C5378004C3B34 /* YYKVStorage.m */; };
 		51D372D61F2C5378004C3B34 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D372D01F2C5378004C3B34 /* YYMemoryCache.m */; };
+		51D372DA1F2C5428004C3B34 /* LSToolsCacheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D372D91F2C5428004C3B34 /* LSToolsCacheViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,8 @@
 		51D372CE1F2C5378004C3B34 /* YYKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKVStorage.m; sourceTree = "<group>"; };
 		51D372CF1F2C5378004C3B34 /* YYMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMemoryCache.h; sourceTree = "<group>"; };
 		51D372D01F2C5378004C3B34 /* YYMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
+		51D372D81F2C5428004C3B34 /* LSToolsCacheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSToolsCacheViewController.h; sourceTree = "<group>"; };
+		51D372D91F2C5428004C3B34 /* LSToolsCacheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSToolsCacheViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,8 @@
 		51D372D71F2C53CA004C3B34 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
+				51D372D81F2C5428004C3B34 /* LSToolsCacheViewController.h */,
+				51D372D91F2C5428004C3B34 /* LSToolsCacheViewController.m */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 				513289E91F27198700B1A527 /* main.m in Sources */,
 				51328A0A1F27223800B1A527 /* LSToolsTimerViewController.m in Sources */,
 				51D372D31F2C5378004C3B34 /* YYCache.m in Sources */,
+				51D372DA1F2C5428004C3B34 /* LSToolsCacheViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

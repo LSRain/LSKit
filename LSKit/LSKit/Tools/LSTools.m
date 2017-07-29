@@ -18,15 +18,6 @@
 @implementation LSTools
 
 
-+ (instancetype)sharedTools {
-    static LSTools *instance = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        instance = [[LSTools alloc] init];
-    });
-    return instance;
-}
-
 #pragma mark - Create a GCD timer
 
 - (void)initGCDTimerWithIntervals:(CGFloat)intervalsTime andCallback:(LSGCDTimerCallBack)callBack{
@@ -49,6 +40,25 @@
 
 - (void)startGCDTimer{
     dispatch_resume(self.timer);
+}
+
+#pragma mark - Singleton
+
++ (instancetype)sharedTools {
+    static LSTools *instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[LSTools alloc] init];
+    });
+    return instance;
+}
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.userCache = [[YYCache alloc] initWithName:@"LSCacheManager.userInfo"];
+    }
+    return self;
 }
 
 @end
