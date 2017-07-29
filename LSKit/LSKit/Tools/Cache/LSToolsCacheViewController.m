@@ -7,6 +7,7 @@
 //
 
 #import "LSToolsCacheViewController.h"
+#import "LSTools.h"
 
 @interface LSToolsCacheViewController ()
 
@@ -19,6 +20,15 @@
     // Do any additional setup after loading the view.
     
     self.view.backgroundColor = [UIColor darkGrayColor];
+    
+    // Cache
+    [[LSTools sharedTools].userCache setObject:@[
+                                                 @"Test Data 01",
+                                                 @"Test Data 02",
+                                                 @"Test Data 03"
+                                                 ]
+                                        forKey:@"kTestKey"];
+    NSLog(@"red Cache Data: %@", [[LSTools sharedTools].userCache objectForKey:@"kTestKey"]);
 }
 
 - (void)didReceiveMemoryWarning {

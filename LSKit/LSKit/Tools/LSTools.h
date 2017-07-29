@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-/* third Libs: https://github.com/ibireme/YYCache */
+/* 
+ third Libs: https://github.com/ibireme/YYCache
+ If you are using a manual installation method, you need to add the following frameworks:
+ UIKit
+ CoreFoundation
+ QuartzCore
+ sqlite3
+ */
 #import "YYCache.h"
 
 typedef void(^LSGCDTimerCallBack)();

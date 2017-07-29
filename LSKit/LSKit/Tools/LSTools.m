@@ -53,6 +53,8 @@
     return instance;
 }
 
+#pragma mark - init
+
 - (instancetype)init {
     self = [super init];
     if (self) {

@@ -62,6 +62,7 @@
     self.titles = @[].mutableCopy;
     self.classNames = @[].mutableCopy;
     [self addCell:@"Timer" class:@"LSToolsTimerViewController"];
+    [self addCell:@"Cache" class:@"LSToolsCacheViewController"];
     
     [self.tableView reloadData];
 }
