@@ -13,6 +13,12 @@
 		51328A061F271DC500B1A527 /* LSRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51328A051F271DC500B1A527 /* LSRootViewController.m */; };
 		51328A0A1F27223800B1A527 /* LSToolsTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51328A091F27223800B1A527 /* LSToolsTimerViewController.m */; };
 		51328A101F272BF600B1A527 /* LSTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 51328A0F1F272BF600B1A527 /* LSTools.m */; };
+		51D372D11F2C5378004C3B34 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 51D372C61F2C5378004C3B34 /* LICENSE */; };
+		51D372D21F2C5378004C3B34 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 51D372C71F2C5378004C3B34 /* README.md */; };
+		51D372D31F2C5378004C3B34 /* YYCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D372CA1F2C5378004C3B34 /* YYCache.m */; };
+		51D372D41F2C5378004C3B34 /* YYDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D372CC1F2C5378004C3B34 /* YYDiskCache.m */; };
+		51D372D51F2C5378004C3B34 /* YYKVStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D372CE1F2C5378004C3B34 /* YYKVStorage.m */; };
+		51D372D61F2C5378004C3B34 /* YYMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D372D01F2C5378004C3B34 /* YYMemoryCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,16 @@
 		51328A091F27223800B1A527 /* LSToolsTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSToolsTimerViewController.m; sourceTree = "<group>"; };
 		51328A0E1F272BF600B1A527 /* LSTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTools.h; sourceTree = "<group>"; };
 		51328A0F1F272BF600B1A527 /* LSTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTools.m; sourceTree = "<group>"; };
+		51D372C61F2C5378004C3B34 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		51D372C71F2C5378004C3B34 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		51D372C91F2C5378004C3B34 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
+		51D372CA1F2C5378004C3B34 /* YYCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCache.m; sourceTree = "<group>"; };
+		51D372CB1F2C5378004C3B34 /* YYDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDiskCache.h; sourceTree = "<group>"; };
+		51D372CC1F2C5378004C3B34 /* YYDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDiskCache.m; sourceTree = "<group>"; };
+		51D372CD1F2C5378004C3B34 /* YYKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKVStorage.h; sourceTree = "<group>"; };
+		51D372CE1F2C5378004C3B34 /* YYKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKVStorage.m; sourceTree = "<group>"; };
+		51D372CF1F2C5378004C3B34 /* YYMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMemoryCache.h; sourceTree = "<group>"; };
+		51D372D01F2C5378004C3B34 /* YYMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,7 @@
 		513289E61F27198700B1A527 /* LSKit */ = {
 			isa = PBXGroup;
 			children = (
+				51D372C41F2C5378004C3B34 /* Libs */,
 				51328A071F2721D900B1A527 /* Tools */,
 				513289FE1F271C8800B1A527 /* LSAppDelegate.h */,
 				513289FF1F271C8800B1A527 /* LSAppDelegate.m */,
@@ -83,12 +100,53 @@
 		51328A071F2721D900B1A527 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				51D372D71F2C53CA004C3B34 /* Cache */,
 				51328A081F27223800B1A527 /* LSToolsTimerViewController.h */,
 				51328A091F27223800B1A527 /* LSToolsTimerViewController.m */,
 				51328A0E1F272BF600B1A527 /* LSTools.h */,
 				51328A0F1F272BF600B1A527 /* LSTools.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		51D372C41F2C5378004C3B34 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				51D372C51F2C5378004C3B34 /* YYCache */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		51D372C51F2C5378004C3B34 /* YYCache */ = {
+			isa = PBXGroup;
+			children = (
+				51D372C61F2C5378004C3B34 /* LICENSE */,
+				51D372C71F2C5378004C3B34 /* README.md */,
+				51D372C81F2C5378004C3B34 /* YYCache */,
+			);
+			path = YYCache;
+			sourceTree = "<group>";
+		};
+		51D372C81F2C5378004C3B34 /* YYCache */ = {
+			isa = PBXGroup;
+			children = (
+				51D372C91F2C5378004C3B34 /* YYCache.h */,
+				51D372CA1F2C5378004C3B34 /* YYCache.m */,
+				51D372CB1F2C5378004C3B34 /* YYDiskCache.h */,
+				51D372CC1F2C5378004C3B34 /* YYDiskCache.m */,
+				51D372CD1F2C5378004C3B34 /* YYKVStorage.h */,
+				51D372CE1F2C5378004C3B34 /* YYKVStorage.m */,
+				51D372CF1F2C5378004C3B34 /* YYMemoryCache.h */,
+				51D372D01F2C5378004C3B34 /* YYMemoryCache.m */,
+			);
+			path = YYCache;
+			sourceTree = "<group>";
+		};
+		51D372D71F2C53CA004C3B34 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51D372D11F2C5378004C3B34 /* LICENSE in Resources */,
 				513289F41F27198700B1A527 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,11 +220,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51D372D21F2C5378004C3B34 /* README.md in Sources */,
+				51D372D41F2C5378004C3B34 /* YYDiskCache.m in Sources */,
 				51328A101F272BF600B1A527 /* LSTools.m in Sources */,
+				51D372D61F2C5378004C3B34 /* YYMemoryCache.m in Sources */,
+				51D372D51F2C5378004C3B34 /* YYKVStorage.m in Sources */,
 				51328A061F271DC500B1A527 /* LSRootViewController.m in Sources */,
 				51328A001F271C8800B1A527 /* LSAppDelegate.m in Sources */,
 				513289E91F27198700B1A527 /* main.m in Sources */,
 				51328A0A1F27223800B1A527 /* LSToolsTimerViewController.m in Sources */,
+				51D372D31F2C5378004C3B34 /* YYCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
