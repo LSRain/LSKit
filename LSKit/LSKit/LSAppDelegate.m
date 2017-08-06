@@ -11,7 +11,6 @@
 #import "LSAppDelegate.h"
 #import "LSRootViewController.h"
 
-
 # pragma mark - Fix the navigation bar height when hide status bar.
 
 @interface LSNavBar : UINavigationBar
